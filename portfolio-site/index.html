@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio BTS SIO SISR – Mairie de Bagnols-sur-Cèze</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Instrument+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#f1f4f9;--ink:#0d1b2a;--mut:#5a6b80;--card:#fff;--line:#d5dde8;--blue:#2f5bff;--amber:#ffb703;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--ink:#eef3fb;--mut:#93a4bb;--card:#131d31;--line:#25334d;--blue:#6b8cff}}
+:root[data-theme="dark"]{--bg:#0b1220;--ink:#eef3fb;--mut:#93a4bb;--card:#131d31;--line:#25334d;--blue:#6b8cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;line-height:1.5}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.05}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;overflow-x:auto;padding:12px 20px;background:var(--bg);border-bottom:1px solid var(--line)}
+nav a{color:var(--ink);text-decoration:none;padding:6px 14px;border-radius:99px;font-weight:600;font-size:14px;white-space:nowrap}
+nav a:hover{background:var(--card)}
+section{max-width:1100px;margin:0 auto;padding:72px 20px}
+h2{font-size:clamp(32px,6vw,56px);font-weight:800;margin-bottom:28px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;min-height:80vh}
+.hero h1{font-size:clamp(40px,8vw,84px);font-weight:800;outline:none}
+.hero p{font-size:20px;color:var(--mut);margin:16px 0 24px}
+.slot{cursor:default;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;min-height:180px;aspect-ratio:16/10;border:2px dashed var(--line);border-radius:14px;background:var(--card) center/cover no-repeat;color:var(--mut);font-size:14px;overflow:hidden}
+.slot:hover{border-color:var(--blue)}
+.slot.has{border-style:solid;border-color:transparent}.slot.has span{display:none}
+.slot::after{content:"";position:absolute;left:50%;bottom:0;width:26px;height:8px;margin-left:-13px;background:var(--amber);border-radius:3px 3px 0 0}
+.slot span{font-size:26px}.slot small{font-size:12px;opacity:.7}.slot.has small{display:none}
+.hero .slot{aspect-ratio:4/5}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:22px;font-weight:800;padding:2px 4px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;padding:9px 16px;border-radius:99px;background:var(--blue);color:#fff;align-self:flex-start}
+.btn.o{background:none;color:var(--ink);border:1.5px solid var(--ink)}
+.btn:hover{filter:brightness(1.1)}.btn:focus-visible,.slot:focus-visible,nav a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{display:flex;align-items:center;gap:10px;padding:14px 20px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:20px;color:var(--ink);text-decoration:none}
+.chip:hover{border-color:var(--blue)}
+.chip i{font-style:normal;font-size:24px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+footer{text-align:center;color:var(--mut);padding:40px 20px 60px;font-size:14px}
+@media(max-width:760px){.hero,.two{grid-template-columns:1fr}.hero{min-height:0}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#top">Moi</a><a href="#mairie">Mairie</a><a href="#missions">Missions</a><a href="#competences">Compétences</a><a href="#projets">Projets</a><a href="#veille">Veille</a><a href="#bilan">Bilan</a>
+</nav>
+
+<section id="top" class="hero">
+<div>
+<h1>Ton Prénom Nom</h1>
+<p>BTS SIO option SISR, en alternance à la mairie de Bagnols-sur-Cèze</p>
+<a class="btn" href="#missions">Voir mes missions</a>
+<a class="btn o" href="#projets">Mes projets</a>
+</div>
+<div class="slot" data-img="photo-moi"   aria-label="Ajouter ta photo"><span>📷</span>Ta photo</div>
+</section>
+
+<section id="mairie">
+<h2>La mairie</h2>
+<div class="two">
+<div class="slot" data-img="mairie"  ><span>🏛️</span>Photo de la mairie</div>
+<div class="slot" data-img="organigramme"  ><span>🗺️</span>Organigramme du service informatique</div>
+</div>
+</section>
+
+<section id="missions">
+<h2>Mes missions</h2>
+<div class="grid">
+<div class="card"><div class="slot" data-img="deploiement"  ><span>💻</span>Déploiement</div><h3>Déploiement de postes</h3></div>
+<div class="card"><div class="slot" data-img="ad-gpo"  ><span>🗂️</span>AD / GPO</div><h3>Active Directory et GPO</h3><a class="btn o" target="_blank" rel="noopener" href="https://learn.microsoft.com/fr-fr/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview">Doc Microsoft</a></div>
+<div class="card"><div class="slot" data-img="sessions-mails"  ><span>✉️</span>Comptes</div><h3>Sessions et mails</h3></div>
+<div class="card"><div class="slot" data-img="baie"  ><span>🔌</span>Baie</div><h3>Baie de brassage</h3></div>
+<div class="card"><div class="slot" data-img="vlan-huawei"  ><span>🌐</span>VLAN</div><h3>VLAN et switchs Huawei</h3><a class="btn o" target="_blank" rel="noopener" href="https://support.huawei.com/enterprise/fr/">Support Huawei</a></div>
+<div class="card"><div class="slot" data-img="telephonie"  ><span>☎️</span>Téléphonie</div><h3>Téléphonie interne</h3></div>
+<div class="card"><div class="slot" data-img="supervision"  ><span>📊</span>Supervision</div><h3>Supervision</h3></div>
+<div class="card"><div class="slot" data-img="partages"  ><span>🖨️</span>Partages</div><h3>Dossiers et imprimantes partagés</h3></div>
+<div class="card"><div class="slot" data-img="sites-distants"  ><span>🚗</span>Sites distants</div><h3>Dépannage sur sites distants</h3></div>
+</div>
+</section>
+
+<section id="competences">
+<h2>Mes compétences</h2>
+<div class="chips">
+<a class="chip" target="_blank" rel="noopener" href="https://learn.microsoft.com/fr-fr/windows-server/"><i>🪟</i>Windows Server</a>
+<a class="chip" target="_blank" rel="noopener" href="https://www.microsoft.com/fr-fr/windows"><i>🖥️</i>Windows</a>
+<a class="chip" target="_blank" rel="noopener" href="https://www.debian.org/index.fr.html"><i>🌀</i>Debian</a>
+<a class="chip" target="_blank" rel="noopener" href="https://ubuntu.com/"><i>🟠</i>Ubuntu</a>
+<a class="chip" target="_blank" rel="noopener" href="https://www.pfsense.org/"><i>🛡️</i>pfSense</a>
+<a class="chip" target="_blank" rel="noopener" href="https://learn.microsoft.com/fr-fr/virtualization/hyper-v-on-windows/"><i>🧱</i>Hyper-V</a>
+<a class="chip" target="_blank" rel="noopener" href="https://www.virtualbox.org/"><i>📦</i>VirtualBox</a>
+</div>
+</section>
+
+<section id="projets">
+<h2>Projets personnels</h2>
+<div class="two">
+<div class="card"><div class="slot" data-img="projet-fastfood"  ><span>🍔</span>Captures du site</div><h3>Site d'un fast-food</h3><a class="btn" target="_blank" rel="noopener" href="#">Voir le site</a></div>
+<div class="card"><div class="slot" data-img="projet-domotique"  ><span>🏠</span>Ma domotique</div><h3>Ma maison automatisée</h3></div>
+</div>
+</section>
+
+<section id="veille">
+<h2>Veille technologique</h2>
+<p style="color:var(--mut);font-size:20px;margin:-12px 0 24px">L'automatisation domestique : Wi-Fi, routeur et application</p>
+<div class="grid">
+<div class="slot" data-img="veille-lumieres"  ><span>💡</span>Lumières</div>
+<div class="slot" data-img="veille-tv-console"  ><span>📺</span>TV et console</div>
+<div class="slot" data-img="veille-litiere"  ><span>🐈</span>Litière</div>
+<div class="slot" data-img="veille-appli"  ><span>📱</span>L'application</div>
+</div>
+</section>
+
+<section id="bilan">
+<h2>Bilan</h2>
+<div class="two">
+<div class="slot" data-img="bilan-appris"  ><span>⭐</span>Ce que j'ai appris</div>
+<div class="slot" data-img="bilan-suite"  ><span>🚀</span>La suite</div>
+</div>
+</section>
+
+<footer>Portfolio BTS SIO SISR</footer>
+
+<script>
+document.querySelectorAll('.slot').forEach(function(s){
+  var n=s.dataset.img,exts=['jpg','jpeg','png','webp'],i=0;
+  var hint=document.createElement('small');hint.textContent='images/'+n+'.jpg';s.appendChild(hint);
+  (function tryNext(){
+    if(i>=exts.length)return;
+    var url='images/'+n+'.'+exts[i++],img=new Image();
+    img.onload=function(){s.style.backgroundImage='url("'+url+'")';s.classList.add('has')};
+    img.onerror=tryNext;img.src=url;
+  })();
+});
+</script>
+</body>
+</html>

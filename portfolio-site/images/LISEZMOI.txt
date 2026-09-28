@@ -1,0 +1,24 @@
+Mets tes images dans ce dossier avec EXACTEMENT ces noms (jpg, jpeg, png ou webp) :
+
+photo-moi.jpg
+mairie.jpg
+organigramme.jpg
+deploiement.jpg
+ad-gpo.jpg
+sessions-mails.jpg
+baie.jpg
+vlan-huawei.jpg
+telephonie.jpg
+supervision.jpg
+partages.jpg
+sites-distants.jpg
+projet-fastfood.jpg
+projet-domotique.jpg
+veille-lumieres.jpg
+veille-tv-console.jpg
+veille-litiere.jpg
+veille-appli.jpg
+bilan-appris.jpg
+bilan-suite.jpg
+
+Une image manquante = le cadre reste vide avec son nom indiqué.
